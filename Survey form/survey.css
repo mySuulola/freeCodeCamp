@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(164, 241, 133);
+
+}
+
+#main {
+    width: 60vw;
+    height: auto;
+    position: absolute;
+    left: 20vw;
+    background-color: azure;
+    line-height: 8vh;
+  
+}
+
+h1, legend {
+    text-align: center
+}
+
+button {
+    background-color: bisque;
+}

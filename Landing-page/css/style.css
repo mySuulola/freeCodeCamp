@@ -1,0 +1,189 @@
+:root {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0px;
+}
+* {
+    font-family: cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main {
+  min-width: 550px;
+}
+
+#nav-bar {
+  margin: 0 auto;
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  top: -1vh;
+  background-color: purple;
+  z-index: 20;
+}
+#header-img{
+  height: auto;
+  width: 100px;
+  top: -1vh;
+  display:inline-block;
+  position: fixed;
+  z-index: 21;
+  border-radius: 0 10px 10px 0;
+}
+
+ul {
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  padding-top: 20vh;
+  width: 90vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+#about {
+  width: 50vw;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+#video {
+  width: 50vw;
+  height: 50vh;
+}
+
+#products {
+  width: 60vw;
+  height: 60vw;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 25vw;
+  height: 40vh;
+  border: 2px solid purple;
+  border-radius: 50px;
+}
+
+#shoe {
+  background-image: url("https://res.cloudinary.com/dxmewvier/image/upload/v1544425224/shoe.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#watch {
+  background-image: url("https://res.cloudinary.com/dxmewvier/image/upload/v1544425239/watch.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#native {
+  background-image: url("https://res.cloudinary.com/dxmewvier/image/upload/v1544425222/native.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#bags {
+  background-image: url("https://res.cloudinary.com/dxmewvier/image/upload/v1544425193/bag.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 550px) {
+  #product {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  .box {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+label {
+  line-height: 40px;
+}
+#two {
+  display: flex;
+  flex-direction: row;
+}
+
+#order {
+  width: 40vw;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact {
+  width: 40vw;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 20px;
+  position: fixed;
+  top: 90vh;
+  z-index: 99;
+}
+
+.social {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  width: 90vw;
+  height: auto;
+  background-color: purple;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 3vw;
+}
+
+.care {
+  width: 50px;
+  height: 50px;
+  padding-left: 5vw;
+}
+
+.box > p {
+  color: purple;
+  font-weight: bolder;
+  display: inline-block;
+  padding: 5px;
+}

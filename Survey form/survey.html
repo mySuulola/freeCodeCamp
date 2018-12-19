@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+    <div id="main">
+        <h1 id="title"> Survey Form</h1>
+
+        <form id = "survey-form" action="/football.php">
+            <fieldset>
+                <legend id= "description">This survey aims to get information about your football club</legend>
+            <label for="name-label">Name: </label>
+            <input type="text" name="name" placeholder="Name" id="name-label">
+        <br>
+            <label for="email-label">Email</label>
+            <input type="email" name="mail" id="email-label" placeholder="E-mail">
+        <br>
+             <label for="number-label">Phone Number</label>
+            <input type="number" name="phone" id="number-label" placeholder="Phone Number" minlength="11" maxlength="13" required>
+        <br>
+            <label for="Club">Club: </label>
+            <select name="club" id="dropdown">
+                <option value="clubs" disabled selected>--Select Club--</option>
+                <option value="liv">Liverpool</option>
+                <option value="che">Chelsea</option>
+                <option value="manu">Manchester United</option>
+                <option value="manc">Manchester City</option>
+                <option value="tot">Totteham</option>
+            </select>
+            <hr>
+            <label for="switch">Have you ever switched clubs</label>
+            <input type="radio" name="switch" id="yes"> Yes
+            <input type="radio" name="switch" id="no">  No
+            <br>
+            <label for="years">How long have you supported this club</label> <br>
+            <input type="checkbox" name="supportyears" value="less than 1" id="1">Less than a year <br>
+            <input type="checkbox" name="supportyears" value="1-5" id="5">1-5 years <br>
+            <input type="checkbox" name="supportyears" value="5-10" id="10">5-10 years <br>
+            <input type="checkbox" name="supportyears" value="10-20" id="20">10-20 years <br>
+            <input type="checkbox" name="supportyears" value="20+" id="20+"> 20 years+ <br>
+            
+            <label for="comment">Your overall assessment of the Club</label> <br>
+            <textarea name="coment" id="comment" cols="30" rows="10" placeholder="Comment Here"></textarea>
+<br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </fieldset>
+        </form>
+    </div>
+    </body>
+</html>
