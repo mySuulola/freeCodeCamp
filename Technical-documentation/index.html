@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Array Methods in JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+  </head>
+  <body>
+    <div id="container-fluid doc">
+      <nav id="nav-bar">
+        <header>Array Methods in JavaScript</header>
+        <ul>
+          <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+          <li>
+            <a href="#List_of_Array_Methods" class="nav-link"
+              >List of Array Methods</a
+            >
+          </li>
+          <li>
+            <a href="#Array_Methods_and_its_Operation" class="nav-link"
+              >Array Methods and its Operation</a
+            >
+          </li>
+          <li><a href="#Conclusion" class="nav-link">Conclusion</a></li>
+          <li><a href="#References" class="nav-link">References</a></li>
+
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <p>
+            I don't know if you will agree with me on this. But for me, Array
+            are among the most important data types in JavaScript and all of
+            programming generally. Even though Array is classified as an object,
+            i still so much prefer working with it than the typical object.</p> 
+          <p> You may wonder why i prefer Array so much - maybe because it gives me
+            the excuse to be lazy, maybe because i learnt JavaScript Array
+            methods first before others and i found its operations so limitless.
+          </p>
+          <p>So let's dive in into what Array is about</p>
+          <blockquote>
+            Array is the way of storing multiple data or list of data in a
+            single variable. Very much identical to object.
+          </blockquote>
+          <code
+            >var arrayName = [firstElem, secondElem, thirdElem . . .
+            nthElem]</code
+          > <br>
+          <code
+            >var arrayName = new(firstElem, secondElem, thirdElem . . .
+            nthElem)</code
+          >
+        </section>
+
+        <section class="main-section" id="List_of_Array_Methods">
+          <header>List of Array Methods</header>
+          <p>
+            Several Array methods exists, the full list is at
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+              >MDN Documentation.</a
+            >The majors ones you are likely to encounter easily are listed below as well as what they are used for
+          </p>
+          <ul>
+            <li>
+              To convert to an array from other data type <code> dataName.split("")
+              <br> Array.from(dataName) </code>
+            </li>
+            <li>
+              To add and remove from the array <code> aarrName.push() and
+              arrName.pop() <br />
+              arrName.shift() and arrName.unshift() <br />
+              arrName.concat() <br />
+              arrName.splice() </code>
+            </li>
+            <li>
+              To search for something in an array <code> arr.indexOf(item, from) <br>
+              arr.lastIndexOf(item, from) <br> arr.includes(item, from) </code>
+              
+            </li>
+            <li>
+              To copy <code> arrName.splice() <br> arrName.slice() <br> arrName.substring()
+              <br> arrName.substr() </code>
+            </li>
+            <li>
+              To transform an array <code> arr.map() <br> arr.forEach() <br> arr.sort() <br>
+              arr.filter() <br> arr.reduce() </code>
+            </li>
+            <li>To check if the data type is an array <code> Array.isArray(arr) </code></li>
+            <li>
+              To convert back to other data types <code> arrName.join("") <br>
+              arrName.toString() </code>
+            </li>
+          </ul>
+        </section>
+       
+        <section class="main-section" id="Array_Methods_and_its_Operation">
+          <header>Array Methods and its Operation</header>
+          <p>This section will consider some of the major array methods.</p>
+          <p>
+            1.forEach() method: It takes an argument of callback function.
+            Remember, a callback function is a function passed as an argument
+            into another function. .forEach() loops through the array and
+            executes the callback function for each element. During each
+            execution, the current element is passed as an argument to the
+            callback function. The return value for .forEach() will always be
+            undefined. Another way to pass a callback for .forEach() is to use
+            arrow function syntax.
+          </p>
+          <code>arr.forEach(arrUnit => console.log(arrUnit));</code>
+          <p>
+            2. arr.map() method: This works in a similar manner to
+            arr.forEach()— the major difference is that .map() returns a new
+            array.
+          </p>
+          <code>arr.map(arrUnit => console.log(arrUnit))</code>
+          <p>
+              3. arr.filter() method: This returns an array of elements after
+              filtering out certain elements from the original array. The callback
+              function for the arr.filter() method should return true or false
+              depending on the element that is passed to it. The elements that cause
+              the callback function to return true are added to the new array.
+            </p>
+            <code class="preserve">arr.filter(arrUnit => { 
+                    return //condition to be met 
+                });</code>
+            <p>
+              4. arr.reduce() method: This returns a single value after iterating
+              through the elements of an array, thereby reducing the array.
+            </p>
+            <code class="preserve"
+              >arr.reduce((accumulator, currentValue) => { 
+                return accumulator +  currentValue 
+              })
+            </code>
+        </section>
+       
+        <section class="main-section" id="Conclusion">
+          <header>Conclusion</header>
+          <p>From the first sight it may seem that there are so many methods, quite difficult to remember. But actually that’s much easier than it seems. Practice Practice and Practice and it wil soon come all natural to you. Keep exploring.</p>
+        </section>
+
+        <section class="main-section" id="References">
+          <header>References</header>
+          <ul>
+            <li>
+              <a
+                href="http://javascript.info/array-methods"
+                target="_blank"
+                rel="noopener noreferrer"
+                >JavaScript.info: Array Methods</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.codecademy.com/courses/introduction-to-javascript/lessons/javascript-iterators"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Codeacademy: Array Methods</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
