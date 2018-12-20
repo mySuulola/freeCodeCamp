@@ -4,7 +4,6 @@ code {
     padding: 20px;
     background-color: rgb(216, 217, 218);
     border-radius: 10px;
-    
 }
 header{
     font-weight: bolder;    
@@ -13,27 +12,22 @@ header{
 #nav-bar {
     padding: 20px;
 }
+
 #nav-bar li {
     list-style: none;
     background-color: rgb(251, 252, 253);
     margin: 1px;
-    
 }
-#nav-bar a:hover {
-    color: red;
-    
-    animation-name: shake;
-    animation-iteration-count: infinite;
-}
-
 
 #main-doc header{
     font-size: 2em;
     padding: 10px;
 }
+
 .preserve{
     white-space: pre-wrap;
 }
+
 blockquote{
     text-align: center;
     width: 50vw;
@@ -49,6 +43,7 @@ blockquote{
     margin: 20px 0px;
     
 }
+
 li code{
     text-align: justify;
     margin: 10px 70px;
