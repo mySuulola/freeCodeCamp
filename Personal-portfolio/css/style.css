@@ -1,0 +1,145 @@
+
+
+#nav-bar{
+    position: fixed;
+    height: 10vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 99;
+
+}
+
+#first{
+    position: absolute;
+    height: 50px;
+    width:100vw;
+    top: -0.7vw;
+    margin-top:5px;
+    background-color: rgb(172, 171, 171);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+#second{
+    
+    position: absolute;
+    top: 20px;
+    height: 30px;
+    width:100vw;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+#links a{
+    padding: 0 10px;
+    margin: 0 10px;
+    
+}
+
+#welcome-section {
+    background-image: url("https://res.cloudinary.com/dxmewvier/image/upload/v1545359271/e6b59d8f28b31f650a93c9f3ea40f7d3.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    background-color: rgb(159, 160, 160);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#welcome-section p {
+    padding-top: 15vh;
+    position: absolute;
+    color: white;
+    
+}
+#welcome-section button {
+    margin-top: 17vh;
+    position: absolute;
+    color: white;
+    padding: 10px;
+    
+}
+
+#about{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(43, 43, 43);
+    padding: 10px 0;
+}
+
+#about img {
+    width: 20vw;
+    height: 50vh;
+}
+
+#about p {
+    width: 50vw;
+    color: white;
+    padding: 10px;
+}
+
+#contact{
+    color: white;
+    background-image: url("https://res.cloudinary.com/dxmewvier/image/upload/v1545359255/aee2b4a599bbbd3d3e0a5275944f979c.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+#projects{
+    
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 20px;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+#projects img {
+    width: 30vw;
+    height: 50vh;
+    padding: 20px 0;
+}
+
+#projects h2{
+    display: block;
+    width:100vw;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+#footer {
+    background-image: url("https://res.cloudinary.com/dxmewvier/image/upload/v1545359255/215b6b4c366c120a8f51f22cfab8f2a1.jpg");
+    background-size: cover;
+    text-align: center;
+    padding: 10vh 10vw;
+    color: white;
+    
+}
+
+@media only screen and (max-width: 520px) {
+    #first{
+        display: none;
+    }
+
+    #second {
+        position: absolute;
+    top: -1vh;
+    height: 50px;
+    }
+    
+
+    
+    
+}
